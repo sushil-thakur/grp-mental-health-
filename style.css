@@ -920,3 +920,57 @@ body {
     }
 }
 
+/* for journal */
+main {
+    padding: 20px;
+}
+
+#journaling-section {
+    margin: 150px;
+    text-align: center;
+}
+
+#journaling-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+   
+}
+
+#journaling-form label,
+#journaling-form textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#journaling-form button {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#journaling-form button:nth-child(3) {
+    margin-bottom: 1rem;
+}
+
+#save {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#history {
+    width: 100%;
+}
+
+#journal-entry{
+    width: 100%;
+}
+
+/* mood Entries */
+

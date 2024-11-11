@@ -23,20 +23,25 @@
         </nav>
         <button id="menu-btn" class="fas fa-bars" aria-label="Menu"></button>
     </header>
-
-    <section class="search-bar">
-        <input type="text" id="search-query" placeholder="Search for videos..." />
-        <button id="search-btn">Search</button>
-        <button id="voice-btn"><i class="fas fa-microphone"></i></button>
-    </section>
-
-    <section class="blogs" id="blogs">
-        <h1 class="heading">Search Results</h1>
-        <div class="box-container" id="video-container">
-            
-        </div>
-    </section>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    <main>
+        <section id="journaling-section">
+          <h2>Write in Your Journal</h2>
+          <form id="journaling-form">
+            <label for="journal-date">Date:</label>
+            <input type="date" id="journal-date" name="journal-date" required>
+    
+            <label for="journal-entry">Journal Entry:</label>
+            <textarea id="journal-entry" name="journal-entry" rows="4"></textarea>
+    
+            <button type="submit" id="save">Save Entry</button>
+            <button type="button" onclick="displaySavedData()"id="history">Show History</button>
+          </form>
+    
+          <div id="display-container"></div>
+        </section>
+    </main>
+    
+    <script src="journal.js"></script>
+    
+    </body>
+    </html>

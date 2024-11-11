@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindEase - Your Mental Health Companion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="mood.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <i class="fas fa-brain"></i> MindEase
+        </a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="journal.html">Journal</a>
+            <a href="Mood tracker.html">Mood Tracker</a>
+            <a href="blog.html">Blogs</a>
+            <a href="appointment.html">Contact Us</a>
+            
+        </nav>
+        <button id="menu-btn" class="fas fa-bars" aria-label="Menu"></button>
+    </header>
+       
+</head>
+<body>
+    <div class="container">
+        <h1>Mood Tracker</h1>
+        <form id="journalForm">
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="form-group">
+                <label>How are you feeling today?</label>
+                <div class="mood-options">
+                    <div class="mood-option">
+                        <input type="radio" id="happy" name="mood" value="happy" checked>
+                        <label for="happy"><i class="fas fa-smile"></i> Happy</label>
+                    </div>
+                    <div class="mood-option">
+                        <input type="radio" id="sad" name="mood" value="sad">
+                        <label for="sad"><i class="fas fa-frown"></i> Sad</label>
+                    </div>
+                    <div class="mood-option">
+                        <input type="radio" id="calm" name="mood" value="calm">
+                        <label for="calm"><i class="fas fa-peace"></i> Calm</label>
+                    </div>
+                    <div class="mood-option">
+                        <input type="radio" id="anxious" name="mood" value="anxious">
+                        <label for="anxious"><i class="fas fa-wind"></i> Anxious</label>
+                    </div>
+                    <div class="mood-option">
+                        <input type="radio" id="energetic" name="mood" value="energetic">
+                        <label for="energetic"><i class="fas fa-bolt"></i> Energetic</label>
+                    </div>
+                    <div class="mood-option">
+                        <input type="radio" id="stressed" name="mood" value="stressed">
+                        <label for="stressed"><i class="fas fa-head-side-virus"></i> Stressed</label>
+                    </div>
+                    <div class="mood-option">
+                        <input type="radio" id="confident" name="mood" value="confident">
+                        <label for="confident"><i class="fas fa-star"></i> Confident</label>
+                    </div>
+                    <div class="mood-option">
+                        <input type="radio" id="frustrated" name="mood" value="frustrated">
+                        <label for="frustrated"><i class="fas fa-angry"></i> Frustrated</label>
+                    </div>
+                    <div class="mood-option">
+                        <input type="radio" id="motivated" name="mood" value="motivated">
+                        <label for="motivated"><i class="fas fa-fire"></i> Motivated</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="entry">Notes</label>
+                <textarea id="entry" placeholder="How are you feeling today? What's on your mind?" required></textarea>
+            </div>
+
+            <button type="button" onclick="submitForm()">Save Entry</button>
+        </form>
+
+        <div id="tips">
+            <h2>Tips for Your Mood</h2>
+            <ul id="moodTips">Tips will appear here based on your mood selection.</ul>
+        </div>
+
+        <div id="videoContainer">
+            <h2>Video Recommendation</h2>
+            <div id="player"></div>
+        </div>
+
+        <button class="toggle-history" onclick="displaySavedData()">View History</button>
+        <div id="display-container"></div>
+    </div>
+
+    
+    <script src="mood tracker.js"></script>
+</body>
+</html>
